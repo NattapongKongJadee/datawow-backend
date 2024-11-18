@@ -8,12 +8,20 @@ Implement API for any CRUD
 
 ## List API for CRUD
 
-GET /posts - ดึงข้อมูลโพสต์ทั้งหมด
-GET /posts/:id - ดึงข้อมูลโพสต์เฉพาะ ID
-POST /posts - สร้างโพสต์ใหม่
-POST /post/:id/comments สร้าง comment ใหม่
-PUT /posts/:id - แก้ไขโพสต์
-DELETE /posts/:id - ลบโพสต์
+1. GET /posts - ดึงข้อมูลโพสต์ทั้งหมด
+2. GET /posts/:id - ดึงข้อมูลโพสต์เฉพาะ ID
+3. POST /posts - สร้างโพสต์ใหม่
+4. POST /post/:id/comments สร้าง comment ใหม่
+5. PUT /posts/:id - แก้ไขโพสต์
+6. DELETE /posts/:id - ลบโพสต์
+
+#### HOW TO RUN TEST
+
+1. **Start the server**:
+
+   ```bash
+   npm run test
+   ```
 
 #### HOW TO RUN
 

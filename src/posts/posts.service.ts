@@ -99,18 +99,18 @@ export class PostsService {
     },
   ];
 
-  //  1 . Get all posts // aleady add interface
+  //  1 . Get all posts
   findAll(): Posts[] {
     console.log(`Total number of posts found: ${this.posts.length}`);
 
-    //desending
+    //desencding sort
     const sortedPosts = this.posts.sort((a, b) => {
       return new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime();
     });
     return sortedPosts;
   }
 
-  // 2. Get a single post by ID // already added interface
+  // 2. Get a single post by ID
   findOne(postId: number): Posts {
     console.log(`Check post Id before find specfific  ${postId}`);
     const post = this.posts.find((p) => p.postId === postId);
@@ -155,6 +155,7 @@ export class PostsService {
 
     return this.posts[postIndex];
   }
+
   // 3.1 Add a comment to a post
   addComment(
     postId: number,
